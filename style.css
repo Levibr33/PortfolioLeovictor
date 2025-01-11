@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #44444400;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1299ce;
+}
+
+.social-icons-header {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00cc88;
+}
+
+.photo-placeholder {
+    width: 300px;
+    height: 300px;
+    background: #ddd;
+    border: 3px solid #00cc88;
+    text-align: center;
+    line-height: 300px;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.destaque {
+    color: #1299ce;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-image: url('/assets/Imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+}
+
+.tabcontent {
+    display: none;
+    padding: 50px 0;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #4444449c;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #00ff99;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.box p {
+    text-align: left;
+    padding-right: 120px;
+}
+
+button {
+    background-color: #00ff99;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #00cc88;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.button-contact {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-contact button {
+    background-color: #00ff99;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button-contact button:hover {
+    background-color: #00cc88;
+    transform: scale(1.1);
+}
+
+.button-contact button:active {
+    transform: scale(1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-flex {
+    flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .button-container {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .content-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-placeholder {
+        width: 300px;
+        height: 300px;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .button-container button {
+        width: 100%;
+    }
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #00ff99;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+}
+
+.social-btn:hover {
+    background-color: #00cc88;
+    transform: scale(1.1);
+}
+
+.social-btn:active {
+    transform: scale(1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.link-contato {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-contato:hover {
+    color: #1299ce;
+}
+
+.responsive-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    background-color: #4444449c;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.text-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text-container h2 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.project-image {
+    width: 300px;
+    height: 300px;
+    background: #ddd;
+    border: 3px solid #00cc88;
+    text-align: center;
+    line-height: 300px;
+    color: #333;
+    font-size: 16px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+p {
+    margin-bottom: 20px;
+}
