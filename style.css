@@ -91,7 +91,7 @@ nav ul li a:hover {
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    background-image: url('/assets/Imagens/fundo.jpg');
+    background-image: url('fundo.jpg');
     background-size: cover;
     background-position: center;
     line-height: 1.6;
