@@ -12,18 +12,27 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="javascript:void(0);" onclick="openTab('home')">Home</a></li>
                 <li><a href="javascript:void(0);" onclick="openTab('sobre')">Sobre</a></li>
                 <li><a href="javascript:void(0);" onclick="openTab('projetos')">Projetos</a></li>
                 <li><a href="javascript:void(0);" onclick="openTab('contato')">Contato</a></li>
             </ul>
-            <div class="social-icons-header">
-                <a href="https://www.linkedin.com/in/leovictoraraujo/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Levibr33" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:leovictoraraujo@outlook.com" class="social-icon" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://wa.me/+5511968889508" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <!-- Botão de menu sanduíche -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="social-icons-header">
+                <a href="https://www.linkedin.com/in/leovictoraraujo/" class="social-icon" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Levibr33" class="social-icon" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:leovictoraraujo@outlook.com" class="social-icon" target="_blank"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/+5511968889508" class="social-icon" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
+
         </nav>
     </header>
 
@@ -34,7 +43,10 @@
                     <div class="text-container">
                         <h1>Olá, seja bem-vindo!</h1>
                         <h1>Meu nome é <span class="destaque">Leovictor Araújo</span>, e sou desenvolvedor web.</h1>
-                        <p>Sou apaixonado por tecnologia e inovação. Tenho experiências em desenvolvimento de soluções que impactam positivamente as pessoas e empresas, tenho cursos voltados para desenvolvimento como: HTML, CSS, JavaScript, Python, Metodologia Scrum, DevOps, DevSecOps, de modo que agregam positivamente em minha carreira.</p>
+                        <p>Sou apaixonado por tecnologia e inovação. Tenho experiências em desenvolvimento de soluções
+                            que impactam positivamente as pessoas e empresas, tenho cursos voltados para desenvolvimento
+                            como: HTML, CSS, JavaScript, Python, Metodologia Scrum, DevOps, DevSecOps, de modo que
+                            agregam positivamente em minha carreira.</p>
                     </div>
                     <div class="photo-placeholder">
                         <img src="Leovictor.jpg" alt="Foto de Leovictor Araújo" class="photo">
@@ -59,7 +71,11 @@
                 <div class="box box-about">
                     <h2>Um pouco mais sobre mim...</h2>
                     <div class="content-flex">
-                        <p>Sou apaixonado por tecnologia e inovação, com experiência no desenvolvimento de soluções que impactam positivamente pessoas e empresas. Possuo formação em diversas áreas do desenvolvimento, incluindo HTML, CSS, JavaScript, Python, além de metodologias como Scrum, DevOps e DevSecOps. Essas qualificações têm contribuído significativamente para meu crescimento profissional e minha capacidade de entregar resultados de alto impacto.</p>
+                        <p>Sou apaixonado por tecnologia e inovação, com experiência no desenvolvimento de soluções que
+                            impactam positivamente pessoas e empresas. Possuo formação em diversas áreas do
+                            desenvolvimento, incluindo HTML, CSS, JavaScript, Python, além de metodologias como Scrum,
+                            DevOps e DevSecOps. Essas qualificações têm contribuído significativamente para meu
+                            crescimento profissional e minha capacidade de entregar resultados de alto impacto.</p>
                     </div>
                     <div class="button-contact">
                         <button onclick="openTab('contato')">Fale Comigo</button>
@@ -77,9 +93,22 @@
             <div class="container">
                 <div class="box">
                     <h2>Sobre Mim</h2>
-                    <p>Sou um desenvolvedor web apaixonado por tecnologia, inovação e criação de soluções que impactam positivamente pessoas e empresas. Em transição de carreira, acumulo sólida experiência em desenvolvimento com HTML, CSS, JavaScript e frameworks modernos como React, além de conhecimentos em Python, Scrum, DevOps e DevSecOps. Minha formação técnica e experiência prática me permitem desenvolver interfaces modernas, atraentes, funcionais e responsivas, sempre focadas na melhor experiência para os usuários.</p>
-                    <p>Minha trajetória profissional inclui quatro anos de atuação na área de Tecnologia da Informação, onde adquiri habilidades valiosas em suporte técnico, infraestrutura, resolução de problemas, trabalho em equipe e adaptação a demandas diversas. Também atuei em gestão de projetos, integração de equipes, treinamentos e configuração de sistemas, incluindo o ecossistema Microsoft 365.</p>
-                    <p>Tenho como objetivo crescer continuamente como profissional, contribuindo para projetos desafiadores e inovadores, aplicando as melhores práticas do mercado. Estou sempre em busca de aprender novas tecnologias e explorar as oportunidades que o universo da programação tem a oferecer. Meu compromisso é agregar valor por meio de soluções criativas e eficientes, entregando resultados de alto impacto e relevância.</p>
+                    <p>Sou um desenvolvedor web apaixonado por tecnologia, inovação e criação de soluções que impactam
+                        positivamente pessoas e empresas. Em transição de carreira, acumulo sólida experiência em
+                        desenvolvimento com HTML, CSS, JavaScript e frameworks modernos como React, além de
+                        conhecimentos em Python, Scrum, DevOps e DevSecOps. Minha formação técnica e experiência prática
+                        me permitem desenvolver interfaces modernas, atraentes, funcionais e responsivas, sempre focadas
+                        na melhor experiência para os usuários.</p>
+                    <p>Minha trajetória profissional inclui quatro anos de atuação na área de Tecnologia da Informação,
+                        onde adquiri habilidades valiosas em suporte técnico, infraestrutura, resolução de problemas,
+                        trabalho em equipe e adaptação a demandas diversas. Também atuei em gestão de projetos,
+                        integração de equipes, treinamentos e configuração de sistemas, incluindo o ecossistema
+                        Microsoft 365.</p>
+                    <p>Tenho como objetivo crescer continuamente como profissional, contribuindo para projetos
+                        desafiadores e inovadores, aplicando as melhores práticas do mercado. Estou sempre em busca de
+                        aprender novas tecnologias e explorar as oportunidades que o universo da programação tem a
+                        oferecer. Meu compromisso é agregar valor por meio de soluções criativas e eficientes,
+                        entregando resultados de alto impacto e relevância.</p>
                 </div>
             </div>
         </section>
@@ -119,13 +148,19 @@
             <div class="container">
                 <div class="box">
                     <h2>Contato</h2>
-                    <p>Entre em contato comigo! Será um prazer conversarmos sobre meus projetos e caso queira mais informações sobre meu trabalho!</p>
-                    <p><strong>Email:</strong> <a href="mailto:leovictoraraujo@outlook.com" class="link-contato">leovictoraraujo@outlook.com</a></p>
+                    <p>Entre em contato comigo! Será um prazer conversarmos sobre meus projetos e caso queira mais
+                        informações sobre meu trabalho!</p>
+                    <p><strong>Email:</strong> <a href="mailto:leovictoraraujo@outlook.com"
+                            class="link-contato">leovictoraraujo@outlook.com</a></p>
                     <div class="social-buttons">
-                        <a href="https://www.linkedin.com/in/leovictoraraujo/" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/Levibr33" class="social-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="mailto:leovictoraraujo@outlook.com" class="social-btn" target="_blank"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://wa.me/+5511968889508" class="social-btn" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://www.linkedin.com/in/leovictoraraujo/" class="social-btn" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Levibr33" class="social-btn" target="_blank"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="mailto:leovictoraraujo@outlook.com" class="social-btn" target="_blank"><i
+                                class="fas fa-envelope"></i> Email</a>
+                        <a href="https://wa.me/+5511968889508" class="social-btn" target="_blank"><i
+                                class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
             </div>

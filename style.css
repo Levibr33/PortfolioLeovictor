@@ -22,6 +22,21 @@ nav {
     text-align: center;
 }
 
+/* Estilo para o ícone de menu (sanduíche) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -249,6 +264,39 @@ button:active {
     .content-flex {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    /* Menu sanduíche para telas pequenas */
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #00ff99;
+    }
+
+    nav ul li a:hover {
+        color: #1299ce;
+    }
+
+    nav.active ul {
+        display: flex;
     }
 }
 
