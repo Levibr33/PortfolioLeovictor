@@ -1,3 +1,15 @@
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+
+    const menuItems = nav.querySelectorAll('ul li a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('active');
+        });
+    });
+}
+
 function openTab(tabName) {
     const tabs = document.querySelectorAll(".tabcontent");
     tabs.forEach(function(tab) {
@@ -7,7 +19,6 @@ function openTab(tabName) {
     const activeTab = document.getElementById(tabName);
     activeTab.classList.add("active");
 }
-
 
 function scrollToSection(sectionId) {
     openTab(sectionId);
@@ -19,7 +30,3 @@ function scrollToSection(sectionId) {
 window.addEventListener("load", function() {
     openTab("home");
 });
-function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-}
